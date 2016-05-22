@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h3># User Story</h3>
+    <p><code>- I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</code></p>
+    <p><code>- If I pass an invalid URL that doesn't follow the http://www.example.com format, the JSON response will contain an error instead.</code></p>
+    <p><code>- When I visit that shortened URL it will redirect me to the original link.</code></p>
+    
+    <h3>Example creation usage:</h3>
+    <p>https://calm-earth-56476.herokuapp.com/new/https://www.google.com</p>
+    <p>https://calm-earth-56476.herokuapp.com/new/http://foo.com:80</p>
+    <p>Example creation output</p>
+    <p>{ "original_url":"http://foo.com:80", "short_url":"https://calm-earth-56476.herokuapp.com/8170" }</p>
+    <p>Usage:</p>
+    <p>https://calm-earth-56476.herokuapp.com/2871</p>
+    <p>Will redirect to:</p>
+    <p>https://www.google.com/</p>
+  </body>
+</html>
