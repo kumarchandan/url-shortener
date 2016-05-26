@@ -62,4 +62,13 @@ router.get('/:value', function (req, res, next) {
   
 });
 
+// handler cases other than short_url
+router.get('/*', function (req, res, next) {
+  // if not a number, send 404
+  res.send({
+    message: 'DUDE! What are you trying to accomplish? Read the instructions first!'
+  });
+  res.end();
+});
+
 module.exports = router;
