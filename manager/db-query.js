@@ -3,7 +3,7 @@
 // db config
 var mongo = require('mongodb').MongoClient;
 // var db_url = 'mongodb://localhost:27017/url-shortner';
-var db_url = 'mongodb://kchan:99341@ds023530.mlab.com:23530/url-shortner';
+var db_url = process.env.MONGOLAB_URI;
 
 // check if original url exists in db
 function isOrginalURLExists(original_url, cb) {
